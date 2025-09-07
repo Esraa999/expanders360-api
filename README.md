@@ -2,6 +2,58 @@
 
 A comprehensive NestJS backend API for managing global expansion projects, connecting clients with vendors, and storing research documents. Built with MySQL for relational data and MongoDB for unstructured documents.
 
+## 🎥 Getting Started - Watch First!
+
+Before diving into the setup, we recommend watching our comprehensive setup and overview video:
+
+**📺 [Expanders360 API Setup & Demo Video]**
+
+This video covers:
+- Project explanation
+- Database setup and seeding
+- API demonstration with all endpoints
+- Postman collection usage
+- Common troubleshooting tips
+
+*Duration: ~15 minutes*
+
+## 📮 Postman Collection & Environment
+
+To quickly test all API endpoints, import our pre-configured Postman collection and environment:
+
+### Quick Setup:
+1. **Import Collection**: `postman/Expanders360-API.postman_collection.json`
+2. **Import Environment**: `postman/Expanders360-Local.postman_environment.json`
+3. **Select Environment**: Choose "Expanders360 Local" in Postman
+4. **Authentication**: 
+   - First call `Auth > Login` with sample credentials
+   - JWT token will auto-populate for subsequent requests
+
+### What's Included:
+- **Authentication flows** (Register, Login, Profile)
+- **All CRUD operations** for Clients, Projects, Vendors
+- **Matching algorithm** demonstrations
+- **Document management** with file uploads
+- **Analytics endpoints** with sample queries
+- **Admin-only operations** with proper authorization
+
+### Sample Login Credentials:
+```
+Admin User:
+- Email: admin@expanders360.com
+- Password: admin123
+
+Client User:
+- Email: john@techcorp.com
+- Password: password123
+```
+
+### Environment Variables:
+The environment file includes:
+- `base_url`: API base URL (http://localhost:3000)
+- `jwt_token`: Auto-populated after login
+- `client_id`, `project_id`, `vendor_id`: Auto-populated for testing
+
 ## 🚀 Features
 
 ### Authentication & Authorization
@@ -321,23 +373,7 @@ npm run migration:run
 npm run migration:revert
 ```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For support and questions:
-- Create an issue in the repository
-- Contact: support@expanders360.com
 
 ---
 
