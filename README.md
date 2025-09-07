@@ -15,7 +15,6 @@ This video covers:
 - Postman collection usage
 - Common troubleshooting tips
 
-*Duration: ~15 minutes*
 
 ## 📮 Postman Collection & Environment
 
